@@ -22,7 +22,7 @@ const RegistrationScreen = ({navigation}) => {
                 <TextInput style={styles.InputEmail} placeholder = "Muh Nurkhaliz" />
             </View>
             <View style={styles.buttonbottom}>
-                <TouchableHighlight style={styles.submit} underlayColor='#fff' >
+                <TouchableHighlight underlayColor="#AE4E4E" underlayColor='#fff' >
                     <Text style={styles.submitButton}>Submit</Text>
                 </TouchableHighlight>
             </View>

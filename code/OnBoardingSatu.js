@@ -10,7 +10,7 @@ const OnBoardingSatu = ({ navigation }) => {
             <Text style={styles.textonboardingdesc}>Informasi Buku Berdasarkan Lokasi</Text>
             <Text style={styles.textonboardingdesc}>yang kamu Inginkan</Text>
             <View style={styles.buttonbottom}>
-                <TouchableHighlight style={styles.submit} onPress = {() => navigation.navigate('OnBoardingKedua')}>
+                <TouchableHighlight underlayColor="#AE4E4E" onPress = {() => navigation.navigate('OnBoardingKedua')}>
                     <Text style={styles.submitButton}>Lanjutkan</Text>
                 </TouchableHighlight>
             </View>

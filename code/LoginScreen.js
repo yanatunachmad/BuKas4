@@ -21,7 +21,7 @@ const LoginScreen = ({navigation}) => {
                 <Text onPress = {()=> navigation.navigate('RegistrationScreen')} style={{color: '#000000', fontSize: 18}}>Belum Memiliki Akun ? Daftar</Text>
             </View>
             <View style={styles.buttonbottom}>
-                <TouchableHighlight style={styles.submit} onPress = {() => navigation.navigate('SplashScreen')}>
+                <TouchableHighlight underlayColor="#AE4E4E">
                     <Text style={styles.submitButton}>Masuk</Text>
                 </TouchableHighlight>
             </View>

@@ -22,7 +22,8 @@ const style = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'flex-start',
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        padding: 30,
     },
     containerLogin : {
         flexDirection: 'row',
@@ -44,6 +45,7 @@ const style = StyleSheet.create({
     columnemaillogin : {
         flexDirection: 'column',
         justifyContent: 'flex-start',
+
     },
     InputEmail: {
         borderColor: 'gray', 
@@ -55,7 +57,6 @@ const style = StyleSheet.create({
         backgroundColor: '#FAEDED',
     },
     buttonbottom: {
-        marginLeft:30,
         marginBottom: 10,
         backgroundColor:'#AE4E4E',
         borderRadius:10,
@@ -63,22 +64,23 @@ const style = StyleSheet.create({
         width: 300,
         height: 40,
         position: 'absolute',
-        alignItems: 'center',
         justifyContent: 'center',
         bottom:0,
+        left: 64
     },
     submitButton:{
         color:'#fff',
         textAlign:'center',
-        fontSize: 20
+        fontSize: 20,
+        justifyContent: 'center'
     },
     daftarlogin: {
+        flex: 0.1,
         width: 300,
+        marginTop: 90,
         marginLeft: 30,
-        position: 'absolute',
         justifyContent: 'center',
         alignItems: 'center',
-        bottom: 100
     },
     textonboarding: {
         fontSize: 30,
