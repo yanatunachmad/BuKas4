@@ -22,10 +22,21 @@ const style = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold'
     },
+    picker: {
+        fontSize: 16,
+        paddingTop: 13,
+        paddingHorizontal: 10,
+        paddingBottom: 12,
+        borderWidth: 1,
+        borderColor: 'gray',
+        borderRadius: 4,
+        backgroundColor: 'white',
+        color: 'black',
+    },
     textQuestion: {
-        fontSize: 30,
+        fontSize: 25,
         marginLeft: 15,
-        marginTop: 20
+        marginTop: 10
     },
     imagelocation: {
         width: 20,
@@ -67,10 +78,13 @@ const style = StyleSheet.create({
         backgroundColor: '#fff'
     },
     flatdatabuku: {
-        height :'100%',
+        height :'62%',
         backgroundColor: '#FEE2E2',
         borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
+        borderTopRightRadius: 20,
+        borderColor: '#000000',
+        borderWidth: 1,
+        marginTop: 5
     },
     profilScreen:{
         width: "100%",
@@ -83,14 +97,24 @@ const style = StyleSheet.create({
         marginLeft: 15,
         marginRight: 15
     },
+    ROw: {
+        flexDirection: 'row'
+    },
+    columntambahbukus: {
+        margin : 15,
+        width: '40%',
+        flexDirection: 'column'
+    },
     InputBukuJudul:{
         margin: 10
     },
     inputBuku: {
-        height :'100%',
+        height :'80%',
         backgroundColor: '#FEE2E2',
         borderTopLeftRadius: 20,
-        borderTopRightRadius: 20
+        borderTopRightRadius: 20,
+        borderColor: '#000000',
+        borderWidth: 1,
     },
     textlocation: {
         marginLeft: 10, 
@@ -99,7 +123,7 @@ const style = StyleSheet.create({
     },
     headerDashboard : {
         width : '100%',
-        height: '35%',
+        height: '38%',
         flexDirection: 'column',
         backgroundColor: '#fff'
     },
@@ -195,8 +219,39 @@ const style = StyleSheet.create({
         alignItems: 'center',
         marginTop: 50
     },
+    buttonbottomsavebuku: {
+        backgroundColor:'#AE4E4E',
+        borderRadius:10,
+        borderColor: '#fff',
+        height: 40,
+        marginLeft: 15,
+        marginRight: 15,
+        width: "90%",
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10,
+        marginTop: 10
+    },
+    buttonbottomcamera: {
+        backgroundColor:'#03fca5',
+        borderRadius:10,
+        borderColor: '#fff',
+        height: 40,
+        marginLeft: 15,
+        marginRight: 15,
+        width: "90%",
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10,
+        marginTop: 10
+    },
     submitButton:{
         color:'#fff',
+        textAlign:'center',
+        fontSize: 20,
+    },
+    submitFoto:{
+        color:'#000000',
         textAlign:'center',
         fontSize: 20,
     },

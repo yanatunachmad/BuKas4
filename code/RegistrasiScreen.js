@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Image, TextInput, Button, TouchableHighlight, SafeAreaView, ScrollView, Alert} from 'react-native';
+import {Text, View, Image, TextInput, Button, TouchableHighlight, SafeAreaView, ScrollView, Alert, LogBox} from 'react-native';
 import styles from './Styles';
 import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
@@ -30,7 +30,7 @@ const RegistrationScreen = ({navigation}) => {
         setUser(user);
     }
     React.useEffect(()=>{
-        
+        LogBox.ignoreAllLogs();
         const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
         return subscriber;
     },[])

@@ -1,24 +1,24 @@
 import React, {useState} from 'react';
-import {Text, View, Image, TextInput,TouchableHighlight, Alert} from 'react-native';
+import {Text, View, Image, TextInput,TouchableHighlight, Alert, LogBox} from 'react-native';
 import styles from './Styles';
 import { useNavigation } from '@react-navigation/native';
 import auth from '@react-native-firebase/auth';
-// import firebase from '@react-native-firebase/app';
-// import {Auth} from '@react-native-firebase/auth';
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCcBqT_E73rPoFWSwtmMXe9IjHSuPNPdsA",
-//     authDomain: "bukas-528ac.firebaseapp.com",
-//     databaseURL: "https://bukas-528ac-default-rtdb.firebaseio.com/",
-//     projectId: "bukas-528ac",
-//     storageBucket: "bukas-528ac.appspot.com",
-//     messagingSenderId: "1095927580986",
-//     appId: "1:1095927580986:web:4630bffc963a4054da6803",
-//     measurementId: "G-EQSB7BGTVX"
-//   };
-//   if(!firebase.apps.length)
-//   {
-//     firebase.initializeApp(firebaseConfig);
-//   }
+import firebase from '@react-native-firebase/app';
+import {Auth} from '@react-native-firebase/auth';
+const firebaseConfig = {
+    apiKey: "AIzaSyCcBqT_E73rPoFWSwtmMXe9IjHSuPNPdsA",
+    authDomain: "bukas-528ac.firebaseapp.com",
+    databaseURL: "https://bukas-528ac-default-rtdb.firebaseio.com/",
+    projectId: "bukas-528ac",
+    storageBucket: "bukas-528ac.appspot.com",
+    messagingSenderId: "1095927580986",
+    appId: "1:1095927580986:web:4630bffc963a4054da6803",
+    measurementId: "G-EQSB7BGTVX"
+  };
+  if(!firebase.apps.length)
+  {
+    firebase.initializeApp(firebaseConfig);
+  }
 
 const LoginScreen = () => {
 {
@@ -39,6 +39,10 @@ const LoginScreen = () => {
           }
           if (error.code === 'auth/invalid-email') {
             Alert.alert('Alamat Email Salah')
+          }
+          console.error(error);
+          if (error.code === 'auth/wrong-password') {
+            Alert.alert('Password Salah')
           }
           console.error(error);
         });
