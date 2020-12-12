@@ -4,7 +4,8 @@ import SplashScreen from './SplashScreen';
 import LoginScreen from './LoginScreen';
 import RegistrationScreen from './RegistrasiScreen';
 import OnBoardingSatu from './OnBoardingSatu';
-import OnBoardingKedua from './OnBoardingKedua'
+import OnBoardingKedua from './OnBoardingKedua';
+import ButtomTabBuKas from './BottomTab';
 
 const Stack = createStackNavigator();
 const StackLayout = () => {
@@ -33,6 +34,11 @@ const StackLayout = () => {
           <Stack.Screen 
             name= "OnBoardingKedua"
             component = {OnBoardingKedua}
+            options ={{headerShown: false}}
+          />
+          <Stack.Screen 
+            name= "ButtomTabBuKas"
+            component = {ButtomTabBuKas}
             options ={{headerShown: false}}
           />
       </Stack.Navigator>
