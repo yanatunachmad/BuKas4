@@ -8,14 +8,11 @@ const style = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#fff'
     },
-    textHeader: {
-        fontSize: 25,
-        marginTop: 15,
-        marginLeft: 15
-    },
+    
     textHeaderName: {
         fontSize: 25,
         marginLeft: 15,
+        marginTop: 25,
         fontWeight: 'bold'
     },
     textProfileName: {
@@ -36,12 +33,18 @@ const style = StyleSheet.create({
     textQuestion: {
         fontSize: 25,
         marginLeft: 15,
-        marginTop: 10
+        
     },
     imagelocation: {
         width: 20,
         height: 20,
         marginTop: 10
+    },
+    imagekategori: {
+        width: 20,
+        height: 20,
+        marginTop: 10,
+        marginLeft: 30
     },
     statusbukas:{
         width: '40%',
@@ -79,7 +82,7 @@ const style = StyleSheet.create({
     },
     flatdatabuku: {
         height :'62%',
-        backgroundColor: '#FEE2E2',
+        backgroundColor: '#D0E8F2',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         borderColor: '#000000',
@@ -101,16 +104,22 @@ const style = StyleSheet.create({
         flexDirection: 'row'
     },
     columntambahbukus: {
-        margin : 15,
+        
+        width: '100%',
+        flexDirection: 'column',
+        marginLeft: 15,
+        marginRight: 55
+    },
+    rowtambahbukus: {
         width: '40%',
-        flexDirection: 'column'
+        flexDirection: 'row'
     },
     InputBukuJudul:{
         margin: 10
     },
     inputBuku: {
         height :'80%',
-        backgroundColor: '#FEE2E2',
+        backgroundColor: '#D0E8F2',
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         borderColor: '#000000',
@@ -145,7 +154,7 @@ const style = StyleSheet.create({
     },
     textsplashscreen :{
         fontSize: 40,
-        color: '#AE4E4E',
+        color: '#01C5C4',
         fontWeight: 'bold'
     },
     containerLogin : {
@@ -161,7 +170,7 @@ const style = StyleSheet.create({
         alignItems: 'flex-start',
         marginBottom: 20,
         width: "100%",
-        backgroundColor: '#FEE2E2',
+        backgroundColor: '#D0E8F2',
         marginTop: 20
     },
     logologinscreen :{
@@ -171,7 +180,7 @@ const style = StyleSheet.create({
     },
     textloginscreen :{
         fontSize: 35,
-        color: '#AE4E4E',
+        color: '#01C5C4',
         fontWeight: 'bold'
     },
     columnemaillogin : {
@@ -184,7 +193,8 @@ const style = StyleSheet.create({
         width: "100%",
         paddingLeft: 15,
         borderRadius: 10,
-        backgroundColor: '#FAEDED',
+        backgroundColor: '#FFFAA4',
+        
     },
     InputBuku: {
         borderColor: 'gray', 
@@ -194,9 +204,19 @@ const style = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#fff',
     },
+
+    DetailsBuku: {
+        borderColor: 'gray', 
+        borderWidth: 2,
+        width: "100%",
+        height: "150%",
+        paddingLeft: 15,
+        borderRadius: 10,
+        backgroundColor: '#D0E8F2',
+    },
     buttonbottom: {
         marginBottom: 10,
-        backgroundColor:'#AE4E4E',
+        backgroundColor:'#01C5C4',
         borderRadius:10,
         borderColor: '#fff',
         height: 40,
@@ -208,7 +228,7 @@ const style = StyleSheet.create({
         bottom:0,
     },
     buttonbottomregist: {
-        backgroundColor:'#AE4E4E',
+        backgroundColor:'#01C5C4',
         borderRadius:10,
         borderColor: '#fff',
         height: 40,
@@ -220,7 +240,7 @@ const style = StyleSheet.create({
         marginTop: 50
     },
     buttonbottomsavebuku: {
-        backgroundColor:'#AE4E4E',
+        backgroundColor:'#01C5C4',
         borderRadius:10,
         borderColor: '#fff',
         height: 40,
@@ -230,7 +250,7 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 10,
-        marginTop: 10
+        marginTop: 30
     },
     buttonbottomcamera: {
         backgroundColor:'#03fca5',
@@ -264,12 +284,12 @@ const style = StyleSheet.create({
     },
     textonboarding: {
         fontSize: 30,
-        color: '#000000',
+        color: '#153E90',
         fontWeight: 'bold'
     },
     textonboardingdesc: {
         fontSize: 20,
-        color: '#000000',
+        color: '#153E90',
         textAlign: 'center'
     }
 })

@@ -10,7 +10,7 @@ const OnBoardingKedua = ({ navigation }) => {
             <Text style={styles.textonboardingdesc}>Jual, Tukar, dan Hibah kan</Text>
             <Text style={styles.textonboardingdesc}>Buku kalian di BuKas</Text>
             <View style={styles.buttonbottom}>
-                <TouchableHighlight underlayColor="#AE4E4E" onPress = {() => navigation.navigate('LoginScreen')}>
+                <TouchableHighlight underlayColor="#01C5C4" onPress = {() => navigation.navigate('LoginScreen')}>
                     <Text style={styles.submitButton}>Lanjutkan</Text>
                 </TouchableHighlight>
             </View>

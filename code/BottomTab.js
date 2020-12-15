@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {Image} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {DashboardScreen, BuKasScreen, ProfilScreen} from './BottomScreen';
-
-
+import {DashboardScreen, BuKasScreen, ProfilScreen, ChatScreen} from './BottomScreen';
 const Tab = createBottomTabNavigator();
 const ButtomTabBuKas = ()=>{  
     return (
@@ -32,6 +30,19 @@ const ButtomTabBuKas = ()=>{
               tabBarIcon: ({size}) => (
                 <Image
                 source={require('../assetimage/booktab.png')}
+                  style={{
+                    width: size,
+                    height: size,
+                  }}/>),
+              }}
+              />   
+          <Tab.Screen 
+            name="Chat" 
+            component={ChatScreen}
+            options={{
+              tabBarIcon: ({size}) => (
+                <Image
+                source={require('../assetimage/chat.png')}
                   style={{
                     width: size,
                     height: size,
