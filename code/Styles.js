@@ -125,6 +125,52 @@ const style = StyleSheet.create({
         borderColor: '#000000',
         borderWidth: 1,
     },
+    inputPesan: {
+        height :'80%',
+        backgroundColor: '#D0E8F2',
+        borderRadius:10,
+        width:'80%',
+        borderColor: '#000000',
+        borderWidth: 1,
+        paddingLeft: 20,
+        paddingRight:'10%'
+    },
+    Pesanmasuk: {
+        paddingHorizontal:10,
+        backgroundColor: 'red',
+        borderRadius:10,
+        marginRight:20,
+        borderColor: '#000000',
+        borderWidth: 1,
+        paddingLeft: 10,
+        paddingVertical:10,
+        maxWidth:190,
+        color:'white',
+        marginLeft:10,
+       alignContent:'center',
+        minHeight:30,
+      
+    },
+    image: {
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
+      },
+      
+    Pesankirim: {
+        backgroundColor: 'blue',
+        paddingVertical:10,
+        paddingHorizontal:10,
+        borderRadius:10,
+        marginRight:10,
+        borderColor: '#000000',
+        borderWidth: 1,
+        paddingLeft: 20,
+        maxWidth:190,
+        color:'white',
+        
+        
+    },
     textlocation: {
         marginLeft: 10, 
         fontSize: 20, 
@@ -140,6 +186,13 @@ const style = StyleSheet.create({
         width : '100%',
         height: '5%',
         backgroundColor: '#fff'
+    },
+    headerChat:{
+        width : '100%',
+        height: '5%',
+        flexDirection:'row',
+        backgroundColor:'green'
+        
     },
     headerBuKas: {
         width : '100%',
@@ -225,6 +278,17 @@ const style = StyleSheet.create({
         width: "90%",
         justifyContent: 'center',
         position: 'absolute',
+        bottom:0,
+    },
+    buttonchat: {
+        marginBottom: 10,
+        backgroundColor:'#01C5C4',
+        borderRadius:10,
+        borderColor: '#fff',
+        height: 40,        
+        width: "10%",
+        justifyContent: 'flex-end',
+        
         bottom:0,
     },
     buttonbottomregist: {

@@ -267,11 +267,11 @@ const BuKasScreen = ()=>{
   );
 }
 const ChatScreen = () => {
-  return(
-    <View>
-      <Text>Chat Screen</Text>
-    </View>
-  )
+  return (
+  <View>
+    <Text>Halo</Text>
+  </View>  
+  );
 }
 
 const ProfilScreen = ()=>{

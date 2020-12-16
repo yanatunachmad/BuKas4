@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "427799751848",
+    "firebase_url": "https://chatbukas-default-rtdb.firebaseio.com",
+    "project_id": "chatbukas",
+    "storage_bucket": "chatbukas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427799751848:android:f41a63f6b66d5c47a7a69d",
+        "android_client_info": {
+          "package_name": "BuKas.id"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427799751848-jk6t0kq0c7s8jskvvk8pld33ecnup65s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh0dCb83ZBTrLfvbTmwlXGgyLoF4OBw0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427799751848-jk6t0kq0c7s8jskvvk8pld33ecnup65s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
